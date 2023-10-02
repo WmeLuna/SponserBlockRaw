@@ -13,7 +13,7 @@ const useSponsorBlock = (videoId) => {
 function App() {
   const videoRef = useRef(null);
   const params = new URLSearchParams(window.location.search);
-  const v = params.get("v");
+  const v = params.get("v") ? params.get("v") : 'dQw4w9WgXcQ';
   const instance = params.get('inst') ? new URL(params.get('inst')).host : 'yewtu.be';
   const skipSegments = useSponsorBlock(v);
 
@@ -27,7 +27,7 @@ function App() {
     video.addEventListener('timeupdate', checkTimeAndUpdate);
     return () => video.removeEventListener('timeupdate', checkTimeAndUpdate);
   }, [skipSegments]);
-  
+
   return (
     <video
       ref={videoRef}
