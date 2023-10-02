@@ -14,7 +14,7 @@ function App() {
   const videoRef = useRef(null);
   const params = new URLSearchParams(window.location.search);
   const v = params.get("v") ? params.get("v") : 'dQw4w9WgXcQ';
-  const instance = params.get('inst') ? new URL(params.get('inst')).host : 'yewtu.be';
+  const instance = params.get('inst') ? new URL(params.get('inst').startsWith('http://') || params.get('inst').startsWith('https://') ? params.get('inst') : 'http://' + params.get('inst')).host : 'yewtu.be';
   const skipSegments = useSponsorBlock(v);
 
   useEffect(() => {
