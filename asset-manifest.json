@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SponserBlockRaw/static/css/main.c276baff.css",
+    "main.js": "/SponserBlockRaw/static/js/main.14cfa4bc.js",
+    "index.html": "/SponserBlockRaw/index.html",
+    "main.c276baff.css.map": "/SponserBlockRaw/static/css/main.c276baff.css.map",
+    "main.14cfa4bc.js.map": "/SponserBlockRaw/static/js/main.14cfa4bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c276baff.css",
+    "static/js/main.14cfa4bc.js"
+  ]
+}
